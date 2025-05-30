@@ -12,6 +12,13 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.17"
+    "@types/node": "^22.15.28",
+    "@types/nodemailer": "^6.4.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "start": "node ./src/app.ts",
+    "dev": "nodemon ./src/app.ts"
   }
 }
