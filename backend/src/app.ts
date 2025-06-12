@@ -5,6 +5,7 @@ import orderRoutes from "./routes/order.route";
 
 const app = express();
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -33,6 +34,7 @@ app.use(
   }
 );
 
+// 404 handler
 app.use("*", (req, res) => {
   res.status(404).json({ error: "Route not found" });
 });
